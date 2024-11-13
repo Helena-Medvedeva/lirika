@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5</title>
+    <style>
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fb;
+            color: #333;
+            line-height: 1.6;
+        }
+        header, footer {
+            background-color: #4a90e2;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .map-container {
+            border: 2px solid #4a90e2;
+            border-radius: 8px;
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        h1, h2 {
+            color: #380B61;
+        }
+        .video, .audio, .widget {
+            margin-bottom: 20px;
+        }
+        iframe {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+            height: 350px;
+            border: none;
+        }
+        audio {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 5px;
+        }
+        .weatherwidget-io {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Втілення додатків з зовнішніх джерел (API)
+</h1>  
+    </header>
+    <div class="container">
+        <h1>Карта міста Ізмаїл, Одеська область</h1>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89725.24048830774!2d28.845226500000006!3d45.350553000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b765e4f741561f%3A0xbd9ad82dec72627d!2z0IbQt9C80LDRl9C7LCDQntC00LXRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjg2MDA!5e0!3m2!1suk!2sua!4v1731072378763!5m2!1suk!2sua"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        
+        <h2>Відео з YouTube</h2>
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/RGWsecj8du0?si=Y0g83nfJZvI7aB9O&amp" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/J---aiyznGQ?si=ZuS0hzbzBDzqMMbC&amp" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        
+        <h2>Музичний файл</h2>
+        <div class="audio">
+            <audio controls>
+                <source src="Король и Шут - Кукла Колдуна.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує звуковий елемент.
+            </audio>
+            <audio controls>
+                <source src="Сектор газа - Лирика.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує звуковий елемент.
+            </audio>
+            <audio controls>
+                <source src="The Smiths - Bigmouth Strikes Again.mp3" type="audio/mpeg">
+                Ваш браузер не підтримує звуковий елемент.
+            </audio>
+        </div>
+        
+        <h2>Відео з Vimeo</h2>
+        <div class="video">
+            <iframe src="https://player.vimeo.com/video/239079288?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/104810175?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+        
+        <a class="weatherwidget-io" href="https://forecast7.com/en/45d3528d85/izmail/" data-label_1="IZMAIL" data-label_2="WEATHER" data-theme="original">IZMAIL WEATHER</a>
+    </div>
+    
+    <footer>
+        <p>© 2024 Лабораторна робота №5. Всі права захищені.</p>
+    </footer>
+
+    <script>
+        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}
+        (document,'script','weatherwidget-io-js');
+    </script>
+</body>
+</html>
+
